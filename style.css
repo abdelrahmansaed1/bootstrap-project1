@@ -1,0 +1,189 @@
+:root{
+    --dark-color:#19283f;
+    --red-color:#ff3150;
+    --yellow-color:#ffc400;
+    --green-color:#33d1cc;
+    --section-color:#eff7fa;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+.main-btn {
+    background-color: var(--red-color) !important;
+    color: var(--yellow-color) !important;
+    padding: 0.5rem 1rem !important;
+  }
+.btn:hover{
+    color: var(--yellow-color) !important;
+}
+.main-title::after{
+    content: "";
+    position: absolute;
+    background-color: var(--green-color);
+    bottom: -20px;
+    left: 50%;
+    width: 140px;
+    height: 2px;
+    transform: translateX(-50%);
+}
+/* Start Navbar */
+.navbar{
+    background-color: var(--dark-color);
+    color: white;
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--green-color);   
+}
+.navbar .search{
+    border-left: 1px solid var(--green-color);
+}
+.navbar .search i{
+    color: var(--green-color);
+}
+.navbar .navbar-toggler{
+    color: white;
+    font-size: 25px;
+    border-color:white ;
+}
+.navbar .navbar-toggler:focus{
+    display: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+    border-color: var(--green-color);
+}
+/* End Navbar */
+/* Start Landing */
+.landing{
+    background-color: var(--dark-color);
+    height: calc(100vh - 72px);
+}
+
+/* End Landing */
+/* Start servies */
+.servies .icon-holder{
+    height: 200px;
+}
+.icon-holder i{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.icon-holder .number{
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.icon-holder .icon{
+    
+    color: var(--green-color);
+}
+
+.servies h2{
+    color: var(--yellow-color);
+}
+/* End servies */
+/* start protfolio */
+.protfolio{
+    background-color: var(--section-color);
+}
+.protfolio .actice{
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+}
+.protfolio ul li{
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+.protfolio ul li:not(.active):hover{
+    color: var(--red-color);
+}
+.protfolio .box{
+    padding: 5px;
+    overflow: hidden;
+}
+.protfolio .box::before{
+    content: "Application";
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: absolute;
+    transform: translateX(calc(-100% - 5px));
+    transition: 0.3s;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #33d1ccb5;
+}
+.protfolio .box:hover::before{
+    transform: translateX(0);
+}
+/* end protfolio */
+/* start staff */
+.staff .description{
+    max-width: 500px;
+}
+/* end staff */
+/* start team */
+.team{
+    background-color: var(--section-color);
+}
+.team .team-text h2{
+    color: var(--yellow-color);
+}
+.team .row h2{
+    background-color: var(--green-color);
+}
+.team .box h4{
+    background-color: var(--green-color);
+}
+/* end team */
+/* start project */
+.project{
+    background-color: var(--dark-color);
+}
+/* end project */
+/* start subscribe */
+.sub{
+    background-color: var(--yellow-color);
+}
+.sub input[type="email"] {
+    border: none;
+    border-bottom: 1px solid white;
+  }
+  .sub input[type="email"]:focus {
+    outline: none;
+  }
+  .sub ::placeholder {
+    color: white;
+  }
+  .sub input[type="submit"] {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+  }
+  .sub input[type="submit"]:hover {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+  }
+/* end subscribe */
+/* start footer */
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .copyright>span{
+    color: var(--green-color);
+}
+.footer .copyright div span{
+    color: var(--yellow-color);
+}
+
+/* end footer */
+
+
+
+
+
